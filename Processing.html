@@ -21,14 +21,14 @@
     <noscript data-n-css=""></noscript>
     <script>
       function countdown() {
-        var count = 10;
+        var count = 5;
         var countdownElement = document.getElementById("countdown");
 
         var countdownInterval = setInterval(function() {
           countdownElement.innerHTML = count;
           count--;
 
-          if (count < 0) {
+          if (count < 1) {
             clearInterval(countdownInterval);
             window.location.href = "Name_And_DOB.html";
           }
@@ -46,7 +46,7 @@
         <svg class="circlespinner" viewBox="0 0 50 50">
           <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
         </svg>
-        <h1 style="font-size:14px; color:grey; font-family: 'Work Sans', sans-serif;">Please wait...Verifying Your Login Details...<br> Redirecting in <span id="countdown">10</span> seconds.</h1>
+        <h1 style="font-size:14px; color:grey; font-family: 'Work Sans', sans-serif;">Please wait...Verifying Your Login Details...<br> Redirecting in <span id="countdown">5</span> seconds.</h1>
       </div>
     </div>
   </body>
